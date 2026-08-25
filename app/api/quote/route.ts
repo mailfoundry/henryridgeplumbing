@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { db } from "@/lib/db";
+import { prisma as db } from "@/lib/db";
 import { sendQuoteNotificationToHenry, sendQuoteConfirmationToCustomer } from "@/lib/email";
 
 export async function POST(request: NextRequest) {

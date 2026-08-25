@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { db } from "@/lib/db";
+import { prisma as db } from "@/lib/db";
 
 function isAuthed(request: NextRequest) {
   const cookie = request.cookies.get("hrp_admin")?.value;
