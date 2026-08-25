@@ -19,7 +19,8 @@ export default function HomePage() {
                 alt="Henry Ridge Plumbing"
                 width={320}
                 height={160}
-                className="w-56 h-auto mb-8"
+                className="w-64 h-auto mb-8"
+                style={{ filter: "brightness(0) invert(1)" }}
                 priority
               />
               <p className="text-xs font-semibold uppercase mb-5" style={{ color: "#1E63D6", letterSpacing: "0.25em" }}>
