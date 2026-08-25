@@ -265,12 +265,10 @@ export default function HomePage() {
             </div>
 
             <div style={{ background: "#FFFFFF", border: "1px solid #D1D9E6", borderRadius: "16px", padding: "40px", textAlign: "center" }}>
-              {/* Placeholder photo */}
-              <div style={{ background: "#F2F4F7", borderRadius: "12px", height: "280px", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "24px", flexDirection: "column", gap: "12px", color: "#4A5A72" }}>
-                <svg width="48" height="48" fill="none" stroke="currentColor" strokeWidth={1.3} viewBox="0 0 24 24" style={{ opacity: 0.4 }}>
-                  <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/>
-                </svg>
-                <span style={{ fontSize: "0.85rem", opacity: 0.6 }}>Photo of Henry — coming soon</span>
+              {/* Photo of Henry */}
+              <div style={{ borderRadius: "12px", overflow: "hidden", marginBottom: "24px" }}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/gallery/10.jpg" alt="Henry Ridge — plumber, bathroom fitter and tiler based in Staffordshire" style={{ width: "100%", display: "block", objectFit: "cover" }} />
               </div>
               <h3 style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 800, fontSize: "1.5rem", color: "#0A1A2F", marginBottom: "6px" }}>Henry Ridge</h3>
               <p style={{ color: "#1E63D6", fontSize: "0.88rem", fontWeight: 600, marginBottom: "14px" }}>Plumber · Bathroom Fitter · Tiler</p>
