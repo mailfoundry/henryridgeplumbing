@@ -169,35 +169,31 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* Photo grid — highest numbered photos = finished result */}
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-3 mb-10">
-            {[
-              { src: "/gallery/35.jpg" },
-              { src: "/gallery/34.jpg" },
-              { src: "/gallery/33.jpg" },
-              { src: "/gallery/32.jpg" },
-              { src: "/gallery/31.jpg" },
-              { src: "/gallery/30.jpg" },
-            ].map(({ src }, i) => (
-              <div
-                key={i}
-                style={{
-                  borderRadius: "10px",
-                  overflow: "hidden",
-                  aspectRatio: i === 0 ? "3/4" : "4/3",
-                  gridRow: i === 0 ? "span 2" : "span 1",
-                  position: "relative",
-                  background: "#152640",
-                }}
-              >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={src}
-                  alt="Completed bathroom installation by Henry Ridge Plumbing"
-                  style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
-                />
-              </div>
-            ))}
+          {/* Photo grid — large left + 2×2 right */}
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gridTemplateRows: "auto auto", gap: "10px", marginBottom: "40px" }}>
+            {/* Large left — spans 2 rows */}
+            <div style={{ gridColumn: "1", gridRow: "1 / span 2", borderRadius: "10px", overflow: "hidden" }}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/gallery/35.jpg" alt="Completed bathroom by Henry Ridge Plumbing" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
+            </div>
+            {/* Top-right pair */}
+            <div style={{ gridColumn: "2", gridRow: "1", borderRadius: "10px", overflow: "hidden", aspectRatio: "4/3" }}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/gallery/34.jpg" alt="Completed bathroom by Henry Ridge Plumbing" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
+            </div>
+            <div style={{ gridColumn: "3", gridRow: "1", borderRadius: "10px", overflow: "hidden", aspectRatio: "4/3" }}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/gallery/33.jpg" alt="Completed bathroom by Henry Ridge Plumbing" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
+            </div>
+            {/* Bottom-right pair */}
+            <div style={{ gridColumn: "2", gridRow: "2", borderRadius: "10px", overflow: "hidden", aspectRatio: "4/3" }}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/gallery/32.jpg" alt="Completed bathroom by Henry Ridge Plumbing" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
+            </div>
+            <div style={{ gridColumn: "3", gridRow: "2", borderRadius: "10px", overflow: "hidden", aspectRatio: "4/3" }}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/gallery/31.jpg" alt="Completed bathroom by Henry Ridge Plumbing" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
+            </div>
           </div>
 
           {/* What's included */}
