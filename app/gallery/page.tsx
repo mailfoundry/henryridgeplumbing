@@ -8,9 +8,7 @@ export const metadata: Metadata = {
 
 // Add photo filenames here when ready — e.g. "1.jpg", "2.jpg", "3.jpg" ...
 // Lowest number = start of project, highest = finished result
-const photos: string[] = [
-  // "1.jpg", "2.jpg", "3.jpg", ...
-];
+const photos: string[] = Array.from({ length: 35 }, (_, i) => `${i + 1}.jpg`);
 
 export default function GalleryPage() {
   return (
