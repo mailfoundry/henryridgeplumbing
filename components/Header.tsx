@@ -25,10 +25,9 @@ export default function Header() {
               {[...Array(2)].map((_, i) => (
                 <span key={i} style={{ display: "inline-flex", alignItems: "center", gap: 0 }}>
                   {[
-                    "Stafford","Lichfield","Cannock","Tamworth","Rugeley","Burntwood",
-                    "Stone","Uttoxeter","Burton-on-Trent","Penkridge","Hednesford",
-                    "Werrington","Bucknall","Milton","Longton","Kidsgrove",
-                    "Newcastle-under-Lyme","Leek","Cheadle","Biddulph","Chase Terrace",
+                    "Stoke-on-Trent","Werrington","Bucknall","Milton","Longton",
+                    "Kidsgrove","Newcastle-under-Lyme","Biddulph","Hanley","Fenton",
+                    "Trentham","Blurton","Meir","Stafford","Stone","Uttoxeter","Penkridge",
                   ].map((town) => (
                     <span key={town} style={{ color: "rgba(255,255,255,0.65)", fontSize: "0.72rem", letterSpacing: "0.08em", padding: "0 14px" }}>
                       {town} <span style={{ color: "#1E63D6", margin: "0 2px" }}>✦</span>
