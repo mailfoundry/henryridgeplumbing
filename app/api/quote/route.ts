@@ -18,9 +18,8 @@ export async function POST(request: NextRequest) {
     });
 
     // Send emails — fire and forget is fine but we await both so errors are caught
-    const adminUrl = `${process.env.NEXT_PUBLIC_SITE_URL}/admin`;
     await Promise.allSettled([
-      sendQuoteNotificationToHenry({ name, email, phone, service, address, message, adminUrl }),
+      sendQuoteNotificationToHenry({ name, email, phone, service, address, message, id: quote.id }),
       sendQuoteConfirmationToCustomer({ name, email, service }),
     ]);
 
