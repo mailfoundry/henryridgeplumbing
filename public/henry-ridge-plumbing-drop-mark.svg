@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+
+<defs>
+  <linearGradient id="silver" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#8E9298"/>
+    <stop offset="38%" stop-color="#F3F4F7"/>
+    <stop offset="68%" stop-color="#D5D7DA"/>
+    <stop offset="100%" stop-color="#8E9298"/>
+  </linearGradient>
+  <linearGradient id="bluegrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#2D8BE8"/>
+    <stop offset="55%" stop-color="#1E63D6"/>
+    <stop offset="100%" stop-color="#0B2F73"/>
+  </linearGradient>
+</defs>
+
+
+<g transform="translate(315,210) scale(3.7)">
+<path d="M100,0
+      C82,31 43,70 36,107
+      C27,155 57,193 100,216
+      C144,192 173,155 164,107
+      C158,70 119,31 100,0 Z" fill="url(#silver)"/>
+<path d="M91,36
+      C74,61 51,87 49,112
+      C46,143 65,169 94,187
+      C116,174 136,149 136,119
+      C136,91 113,61 91,36 Z" fill="#FFFFFF"/>
+<path d="M84,58
+      C67,81 54,101 54,122
+      C54,151 74,171 96,178
+      C119,171 137,151 137,122
+      C137,100 115,77 100,57
+      C95,51 90,53 84,58 Z" fill="url(#bluegrad)"/>
+<path d="M76,89 C68,101 65,114 67,125 C69,134 72,138 76,141
+                   C73,126 76,109 86,96 C92,88 94,82 95,75
+                   C87,77 81,82 76,89 Z" fill="#FFFFFF" opacity="0.72"/>
+</g>
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+
+<defs>
+  <linearGradient id="silver" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#8E9298"/>
+    <stop offset="38%" stop-color="#F3F4F7"/>
+    <stop offset="68%" stop-color="#D5D7DA"/>
+    <stop offset="100%" stop-color="#8E9298"/>
+  </linearGradient>
+  <linearGradient id="bluegrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#2D8BE8"/>
+    <stop offset="55%" stop-color="#1E63D6"/>
+    <stop offset="100%" stop-color="#0B2F73"/>
+  </linearGradient>
+</defs>
+
+
+<rect width="1024" height="1024" rx="220" fill="#071A35"/>
+<path d="M111 0H419V628H1052V0H1359V1490H1052V892H419V1490H111Z" transform="translate(170.000,655.000) scale(0.25390625,-0.25390625)" fill="#FFFFFF"/>
+<path d="M111 0H419V521H689C690 521 691 521 692 521L956 0H1286L987 579C1154 656 1253 804 1253 1001C1253 1301 1043 1490 707 1490H111ZM419 768V1234H688C851 1234 952 1143 952 1001C952 859 851 768 689 768Z" transform="translate(475.000,655.000) scale(0.25390625,-0.25390625)" fill="#2D8BE8"/>
+</svg>

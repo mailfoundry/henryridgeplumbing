@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { services } from "@/lib/services";
 
 export default function Footer() {
@@ -9,13 +10,14 @@ export default function Footer() {
 
           {/* Brand */}
           <div className="md:col-span-2">
-            <Link href="/" className="flex flex-col leading-none mb-4 w-fit">
-              <span style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 800, fontSize: "1.5rem", color: "#FFFFFF", letterSpacing: "0.03em", textTransform: "uppercase" }}>
-                Henry Ridge
-              </span>
-              <span style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 700, fontSize: "1rem", color: "#1E63D6", letterSpacing: "0.18em", textTransform: "uppercase" }}>
-                — Plumbing —
-              </span>
+            <Link href="/" className="inline-block mb-5">
+              <Image
+                src="/henry-ridge-plumbing-primary-stacked.svg"
+                alt="Henry Ridge Plumbing"
+                width={160}
+                height={80}
+                className="h-16 w-auto"
+              />
             </Link>
             <p className="text-sm leading-relaxed mb-2" style={{ color: "rgba(255,255,255,0.5)" }}>
               Reliable. Professional. Local.

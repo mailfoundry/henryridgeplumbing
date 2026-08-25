@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 
 export default function Header() {
@@ -25,13 +26,15 @@ export default function Header() {
       {/* Main nav */}
       <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between gap-6">
         {/* Logo */}
-        <Link href="/" className="flex flex-col leading-none shrink-0">
-          <span style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 800, fontSize: "1.45rem", color: "#0A1A2F", letterSpacing: "0.03em", textTransform: "uppercase" }}>
-            Henry Ridge
-          </span>
-          <span style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 700, fontSize: "1rem", color: "#1E63D6", letterSpacing: "0.18em", textTransform: "uppercase" }}>
-            — Plumbing —
-          </span>
+        <Link href="/" className="shrink-0">
+          <Image
+            src="/henry-ridge-plumbing-horizontal.svg"
+            alt="Henry Ridge Plumbing"
+            width={200}
+            height={52}
+            className="h-12 w-auto"
+            priority
+          />
         </Link>
 
         {/* Desktop nav */}
