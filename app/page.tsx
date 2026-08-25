@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import { services, AREAS } from "@/lib/services";
 
 export default function HomePage() {
@@ -8,18 +7,6 @@ export default function HomePage() {
 
   return (
     <>
-      {/* ── Logo reveal ──────────────────────────────────────────────── */}
-      <section style={{ background: "#FFFFFF", padding: "18px 16px", textAlign: "center", borderBottom: "1px solid #D1D9E6" }}>
-        <Image
-          src="/henry-ridge-plumbing-primary-stacked-4k.png"
-          alt="Henry Ridge Plumbing"
-          width={300}
-          height={150}
-          className="h-20 w-auto mx-auto"
-          priority
-        />
-      </section>
-
       {/* ── Hero ─────────────────────────────────────────────────────── */}
       <section style={{ background: "linear-gradient(135deg, #0A1A2F 0%, #152640 60%, #1B3060 100%)", padding: "90px 16px" }}>
         <div className="max-w-6xl mx-auto">
