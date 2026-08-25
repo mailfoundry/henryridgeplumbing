@@ -1,28 +1,32 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Gallery — Bathroom Installations & Tiling",
-  description: "Photos of Henry Ridge's completed bathroom installations and tiling work across Staffordshire — including a full dark slate and bronze bathroom transformation.",
+  description: "Photos of Henry Ridge's completed bathroom installations and tiling work across Staffordshire — a full dark slate and bronze bathroom transformation.",
 };
 
-// Finished bathroom — the completed result
-const afterPhotos = [
-  "after-2104.jpg", "after-2105.jpg", "after-2106.jpg", "after-2107.jpg",
-  "after-2108.jpg", "after-2109.jpg", "after-2110.jpg", "after-2111.jpg",
-  "after-2112.jpg", "after-2113.jpg", "after-2114.jpg", "after-2115.jpg",
-  "after-2116.jpg", "after-2117.jpg", "after-2057.jpg", "after-2069.jpg",
-  "after-2070.jpg", "after-2075.jpg", "after-2076.jpg", "after-2077.jpg",
-  "after-2078.jpg", "after-2079.jpg", "after-2080.jpg", "after-2081.jpg",
-];
-
-// Construction — before and during
-const duringPhotos = [
+// All photos in chronological order (iPhone IMG number = when taken)
+const allPhotos = [
+  // Earlier in the project
   "during-1976.jpg", "during-1977.jpg", "during-1978.jpg", "during-1979.jpg",
   "during-1982.jpg", "during-1983.jpg", "during-1984.jpg", "during-1985.jpg",
   "during-1986.jpg", "during-1993.jpg", "during-1994.jpg", "during-1995.jpg",
   "during-1996.jpg", "during-1997.jpg",
+  // Mid-project through finished
+  "after-2030.jpg", "after-2035.jpg", "after-2036.jpg", "after-2037.jpg",
+  "after-2038.jpg", "after-2039.jpg", "after-2040.jpg", "after-2042.jpg",
+  "after-2043.jpg", "after-2044.jpg", "after-2045.jpg", "after-2046.jpg",
+  "after-2049.jpg", "after-2050.jpg", "after-2051.jpg", "after-2052.jpg",
+  "after-2053.jpg", "after-2054.jpg", "after-2055.jpg", "after-2057.jpg",
+  "after-2069.jpg", "after-2070.jpg", "after-2075.jpg", "after-2076.jpg",
+  "after-2077.jpg", "after-2078.jpg", "after-2079.jpg", "after-2080.jpg",
+  "after-2081.jpg",
+  // Final finished shots
+  "after-2104.jpg", "after-2105.jpg", "after-2106.jpg", "after-2107.jpg",
+  "after-2108.jpg", "after-2109.jpg", "after-2110.jpg", "after-2111.jpg",
+  "after-2112.jpg", "after-2113.jpg", "after-2114.jpg", "after-2115.jpg",
+  "after-2116.jpg", "after-2117.jpg",
 ];
 
 export default function GalleryPage() {
@@ -33,92 +37,29 @@ export default function GalleryPage() {
         <div className="max-w-6xl mx-auto">
           <p className="text-xs font-semibold uppercase mb-3" style={{ color: "#1E63D6", letterSpacing: "0.25em" }}>Our Work</p>
           <h1 style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 800, fontSize: "clamp(2.2rem, 5vw, 3.5rem)", color: "#FFFFFF", marginBottom: "14px" }}>
-            Gallery
+            One bathroom. Start to finish.
           </h1>
           <p style={{ color: "rgba(255,255,255,0.6)", fontSize: "1.05rem", maxWidth: "560px", lineHeight: 1.7 }}>
-            One bathroom, start to finish — stripped out, plumbed, tiled, and fitted by Henry. Dark slate tiles, brushed bronze fixtures, and a result the client loves.
+            Strip-out through to the finished suite — all work by Henry. Dark slate tiles, brushed bronze fixtures, fluted glass screen, and a built-in illuminated niche.
           </p>
         </div>
       </section>
 
-      {/* Finished result */}
-      <section style={{ padding: "70px 16px 80px", background: "#0A1A2F" }}>
+      {/* Full masonry grid */}
+      <section style={{ padding: "60px 16px 80px", background: "#0A1A2F" }}>
         <div className="max-w-6xl mx-auto">
-          <div style={{ marginBottom: "40px" }}>
-            <p className="text-xs font-semibold uppercase mb-3" style={{ color: "#1E63D6", letterSpacing: "0.25em" }}>Completed</p>
-            <h2 style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 800, fontSize: "clamp(1.8rem, 3.5vw, 2.5rem)", color: "#FFFFFF", marginBottom: "10px" }}>
-              The finished bathroom
-            </h2>
-            <p style={{ color: "rgba(255,255,255,0.5)", fontSize: "0.95rem" }}>
-              Dark slate-effect tiles · Brushed bronze fixtures · Fluted glass shower screen · Built-in illuminated niche
-            </p>
-          </div>
-
-          <div
-            style={{
-              columns: "2 260px",
-              columnGap: "12px",
-            }}
-          >
-            {afterPhotos.map((photo) => (
+          <div style={{ columns: "2 280px", columnGap: "10px" }}>
+            {allPhotos.map((photo) => (
               <div
                 key={photo}
-                style={{
-                  breakInside: "avoid",
-                  marginBottom: "12px",
-                  borderRadius: "8px",
-                  overflow: "hidden",
-                  position: "relative",
-                }}
+                style={{ breakInside: "avoid", marginBottom: "10px", borderRadius: "8px", overflow: "hidden" }}
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={`/gallery/${photo}`}
-                  alt="Completed bathroom installation by Henry Ridge Plumbing"
+                  alt="Bathroom installation by Henry Ridge Plumbing, Staffordshire"
                   loading="lazy"
-                  style={{ width: "100%", display: "block", borderRadius: "8px" }}
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Construction journey */}
-      <section style={{ padding: "70px 16px 80px", background: "#F2F4F7" }}>
-        <div className="max-w-6xl mx-auto">
-          <div style={{ marginBottom: "40px" }}>
-            <p className="text-xs font-semibold uppercase mb-3" style={{ color: "#1E63D6", letterSpacing: "0.25em" }}>The journey</p>
-            <h2 style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 800, fontSize: "clamp(1.8rem, 3.5vw, 2.5rem)", color: "#0A1A2F", marginBottom: "10px" }}>
-              Before & during
-            </h2>
-            <p style={{ color: "#4A5A72", fontSize: "0.95rem", maxWidth: "520px" }}>
-              Every Henry Ridge bathroom starts with a complete strip-out. New waterproof boarding, all new pipework — done properly from the substrate up.
-            </p>
-          </div>
-
-          <div
-            style={{
-              columns: "2 240px",
-              columnGap: "12px",
-            }}
-          >
-            {duringPhotos.map((photo) => (
-              <div
-                key={photo}
-                style={{
-                  breakInside: "avoid",
-                  marginBottom: "12px",
-                  borderRadius: "8px",
-                  overflow: "hidden",
-                }}
-              >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={`/gallery/${photo}`}
-                  alt="Bathroom installation in progress by Henry Ridge Plumbing"
-                  loading="lazy"
-                  style={{ width: "100%", display: "block", borderRadius: "8px" }}
+                  style={{ width: "100%", display: "block" }}
                 />
               </div>
             ))}
