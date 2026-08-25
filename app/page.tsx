@@ -9,13 +9,13 @@ export default function HomePage() {
   return (
     <>
       {/* ── Logo reveal ──────────────────────────────────────────────── */}
-      <section style={{ background: "#FFFFFF", padding: "48px 16px 40px", textAlign: "center", borderBottom: "1px solid #D1D9E6" }}>
+      <section style={{ background: "#FFFFFF", padding: "56px 16px 48px", textAlign: "center", borderBottom: "1px solid #D1D9E6" }}>
         <Image
           src="/henry-ridge-plumbing-primary-stacked-4k.png"
           alt="Henry Ridge Plumbing"
-          width={400}
-          height={200}
-          className="h-36 w-auto mx-auto"
+          width={500}
+          height={250}
+          className="h-56 w-auto mx-auto"
           priority
         />
       </section>

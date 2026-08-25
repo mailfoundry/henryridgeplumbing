@@ -8,15 +8,43 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 bg-white border-b" style={{ borderColor: "#D1D9E6" }}>
-      {/* Top bar */}
-      <div style={{ background: "#0A1A2F", padding: "6px 0" }}>
-        <div className="max-w-6xl mx-auto px-4 flex justify-between items-center text-xs" style={{ color: "rgba(255,255,255,0.6)" }}>
-          <span>Serving Staffordshire &amp; surrounding areas</span>
-          <div className="flex gap-5">
-            <a href="mailto:info@henryridgeplumbing.co.uk" style={{ color: "rgba(255,255,255,0.75)" }} className="hover:text-white transition-colors">
+      {/* Top bar with ticker */}
+      <style>{`
+        @keyframes ticker {
+          0%   { transform: translateX(0); }
+          100% { transform: translateX(-50%); }
+        }
+        .ticker-track { animation: ticker 32s linear infinite; }
+        .ticker-track:hover { animation-play-state: paused; }
+      `}</style>
+      <div style={{ background: "#0A1A2F", padding: "10px 0", overflow: "hidden" }}>
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: "16px" }}>
+          {/* Scrolling towns */}
+          <div style={{ flex: 1, overflow: "hidden", position: "relative", minWidth: 0 }}>
+            <div className="ticker-track" style={{ display: "flex", whiteSpace: "nowrap", width: "max-content" }}>
+              {[...Array(2)].map((_, i) => (
+                <span key={i} style={{ display: "inline-flex", alignItems: "center", gap: 0 }}>
+                  {[
+                    "Stafford","Lichfield","Cannock","Tamworth","Rugeley","Burntwood",
+                    "Stone","Uttoxeter","Burton-on-Trent","Penkridge","Hednesford",
+                    "Werrington","Bucknall","Milton","Longton","Kidsgrove",
+                    "Newcastle-under-Lyme","Leek","Cheadle","Biddulph","Chase Terrace",
+                  ].map((town) => (
+                    <span key={town} style={{ color: "rgba(255,255,255,0.65)", fontSize: "0.72rem", letterSpacing: "0.08em", padding: "0 14px" }}>
+                      {town} <span style={{ color: "#1E63D6", margin: "0 2px" }}>✦</span>
+                    </span>
+                  ))}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          {/* Contact — static right side */}
+          <div className="flex gap-5 shrink-0 pr-4" style={{ fontSize: "0.72rem" }}>
+            <a href="mailto:info@henryridgeplumbing.co.uk" style={{ color: "rgba(255,255,255,0.7)", textDecoration: "none", whiteSpace: "nowrap" }}>
               info@henryridgeplumbing.co.uk
             </a>
-            <a href="tel:+447306800847" style={{ color: "rgba(255,255,255,0.9)", fontWeight: 600 }} className="hover:text-white transition-colors">
+            <a href="tel:+447306800847" style={{ color: "rgba(255,255,255,0.95)", fontWeight: 700, textDecoration: "none", whiteSpace: "nowrap" }}>
               07306 800847
             </a>
           </div>
