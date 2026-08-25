@@ -75,7 +75,7 @@ export default function AboutPage() {
             Areas covered
           </h2>
           <p style={{ color: "#4A5A72", marginBottom: "28px", fontSize: "0.95rem" }}>
-            Based in Staffordshire — covering the county and surrounding towns. If you&apos;re not sure, just call.
+            Covering Stoke-on-Trent and the surrounding area. Not sure if Henry covers you? Just call.
           </p>
           <div className="flex flex-wrap gap-3">
             {AREAS.map((area) => (

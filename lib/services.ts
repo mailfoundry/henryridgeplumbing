@@ -153,7 +153,7 @@ export function getServiceBySlug(slug: string): Service | undefined {
 }
 
 export const AREAS = [
-  "Stafford", "Lichfield", "Cannock", "Tamworth", "Rugeley",
-  "Burntwood", "Stone", "Uttoxeter", "Burton-on-Trent",
-  "Penkridge", "Hednesford", "Chase Terrace",
+  "Stoke-on-Trent", "Werrington", "Bucknall", "Milton", "Longton",
+  "Kidsgrove", "Newcastle-under-Lyme", "Biddulph", "Hanley", "Fenton",
+  "Trentham", "Blurton", "Meir", "Stafford", "Stone", "Uttoxeter", "Penkridge",
 ];

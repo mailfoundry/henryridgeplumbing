@@ -151,6 +151,88 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ── Bathroom showcase — Task #109 ─────────────────────────────── */}
+      <section style={{ background: "#0A1A2F", padding: "90px 16px" }}>
+        <div className="max-w-6xl mx-auto">
+          {/* Header */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-end mb-12">
+            <div>
+              <p className="text-xs font-semibold uppercase mb-4" style={{ color: "#1E63D6", letterSpacing: "0.25em" }}>Bathroom Installations</p>
+              <h2 style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 800, fontSize: "clamp(2.2rem, 5vw, 3.5rem)", color: "#FFFFFF", lineHeight: 1.05, letterSpacing: "-0.01em" }}>
+                One tradesman.<br />Start to finish.
+              </h2>
+            </div>
+            <div>
+              <p style={{ color: "rgba(255,255,255,0.6)", fontSize: "1rem", lineHeight: 1.75 }}>
+                When you book Henry for a bathroom, you get Henry — from the strip-out to the final fixture. No subcontractors on your doorstep. No corners cut. Just a properly fitted bathroom done right.
+              </p>
+            </div>
+          </div>
+
+          {/* Photo grid */}
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-3 mb-10">
+            {[
+              { src: "/gallery/after-2109.jpg", tall: true },
+              { src: "/gallery/after-2112.jpg", tall: false },
+              { src: "/gallery/after-2107.jpg", tall: false },
+              { src: "/gallery/after-2104.jpg", tall: false },
+              { src: "/gallery/after-2115.jpg", tall: false },
+              { src: "/gallery/after-2057.jpg", tall: false },
+            ].map(({ src }, i) => (
+              <div
+                key={i}
+                style={{
+                  borderRadius: "10px",
+                  overflow: "hidden",
+                  aspectRatio: i === 0 ? "3/4" : "4/3",
+                  gridRow: i === 0 ? "span 2" : "span 1",
+                  position: "relative",
+                  background: "#152640",
+                }}
+              >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={src}
+                  alt="Completed bathroom installation by Henry Ridge Plumbing"
+                  style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
+                />
+              </div>
+            ))}
+          </div>
+
+          {/* What's included */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-12">
+            {[
+              ["Strip-out", "Old suite, tiles, and boarding removed cleanly — full blank canvas."],
+              ["Waterproof boarding", "Moisture-resistant substrate fitted throughout before a single tile goes on."],
+              ["Plumbing & waste", "All pipework and waste connections laid to a proper standard."],
+              ["Tiling & fitting", "Suite, screen, fixtures and tiling — all finished by one pair of hands."],
+            ].map(([title, body]) => (
+              <div key={title} style={{ borderTop: "2px solid #1E63D6", paddingTop: "16px" }}>
+                <p style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 700, fontSize: "1.1rem", color: "#FFFFFF", marginBottom: "8px" }}>{title}</p>
+                <p style={{ color: "rgba(255,255,255,0.5)", fontSize: "0.85rem", lineHeight: 1.6 }}>{body}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* CTAs */}
+          <div className="flex flex-wrap gap-4 items-center">
+            <Link
+              href="/gallery"
+              style={{ display: "inline-block", background: "#1E63D6", color: "#fff", padding: "14px 30px", borderRadius: "8px", fontWeight: 700, textDecoration: "none" }}
+            >
+              See the full transformation →
+            </Link>
+            <Link
+              href="/services/bathroom-installation"
+              style={{ color: "rgba(255,255,255,0.6)", fontWeight: 600, fontSize: "0.9rem", textDecoration: "none" }}
+            >
+              Bathroom installation service
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* ── Why choose Henry ─────────────────────────────────────────── */}
       <section style={{ padding: "90px 16px", background: "#F2F4F7" }}>
         <div className="max-w-6xl mx-auto">
