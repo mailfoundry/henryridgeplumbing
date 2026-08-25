@@ -64,11 +64,11 @@ export default function Header() {
         {/* Logo */}
         <Link href="/" className="shrink-0">
           <Image
-            src="/henry-ridge-plumbing-horizontal.svg"
+            src="/hr-logo.png"
             alt="Henry Ridge Plumbing"
-            width={260}
-            height={68}
-            className="h-16 w-auto"
+            width={64}
+            height={64}
+            className="h-14 w-14"
             priority
           />
         </Link>
