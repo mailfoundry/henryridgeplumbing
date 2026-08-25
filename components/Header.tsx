@@ -17,8 +17,18 @@ export default function Header() {
         .ticker-track { animation: ticker 32s linear infinite; }
         .ticker-track:hover { animation-play-state: paused; }
       `}</style>
-      <div style={{ background: "#0A1A2F", padding: "10px 0", overflow: "hidden" }}>
-        <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: "16px" }}>
+      <div style={{ background: "#0A1A2F", overflow: "hidden" }}>
+        {/* Mobile top bar — phone only */}
+        <div className="md:hidden flex items-center justify-between px-4" style={{ padding: "8px 16px" }}>
+          <a href="tel:+447306800847" style={{ color: "#FFFFFF", fontWeight: 700, fontSize: "0.85rem", textDecoration: "none" }}>
+            📞 07306 800847
+          </a>
+          <a href="mailto:info@henryridgeplumbing.co.uk" style={{ color: "rgba(255,255,255,0.6)", fontSize: "0.75rem", textDecoration: "none" }}>
+            info@henryridgeplumbing.co.uk
+          </a>
+        </div>
+        {/* Desktop top bar — ticker + contacts */}
+        <div className="hidden md:flex items-center justify-between gap-4" style={{ padding: "10px 0" }}>
           {/* Scrolling towns */}
           <div style={{ flex: 1, overflow: "hidden", position: "relative", minWidth: 0 }}>
             <div className="ticker-track" style={{ display: "flex", whiteSpace: "nowrap", width: "max-content" }}>
@@ -37,8 +47,7 @@ export default function Header() {
               ))}
             </div>
           </div>
-
-          {/* Contact — static right side */}
+          {/* Contact */}
           <div className="flex gap-5 shrink-0 pr-4" style={{ fontSize: "0.72rem" }}>
             <a href="mailto:info@henryridgeplumbing.co.uk" style={{ color: "rgba(255,255,255,0.7)", textDecoration: "none", whiteSpace: "nowrap" }}>
               info@henryridgeplumbing.co.uk

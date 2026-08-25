@@ -63,11 +63,11 @@ export default function GalleryPage() {
           <p style={{ color: "rgba(255,255,255,0.75)", marginBottom: "28px" }}>
             Get a free, no-obligation quote — Henry will get back to you the same day.
           </p>
-          <div className="flex flex-wrap gap-4 justify-center">
-            <Link href="/quote" style={{ background: "#FFFFFF", color: "#0A1A2F", padding: "14px 30px", borderRadius: "8px", fontWeight: 700, textDecoration: "none" }}>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/quote" className="text-center" style={{ background: "#FFFFFF", color: "#0A1A2F", padding: "14px 30px", borderRadius: "8px", fontWeight: 700, textDecoration: "none" }}>
               Request a Quote
             </Link>
-            <a href="tel:+447306800847" style={{ border: "2px solid rgba(255,255,255,0.4)", color: "#fff", padding: "14px 30px", borderRadius: "8px", fontWeight: 700, textDecoration: "none" }}>
+            <a href="tel:+447306800847" className="text-center" style={{ border: "2px solid rgba(255,255,255,0.4)", color: "#fff", padding: "14px 30px", borderRadius: "8px", fontWeight: 700, textDecoration: "none" }}>
               Call 07306 800847
             </a>
           </div>

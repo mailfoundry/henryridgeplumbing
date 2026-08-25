@@ -22,11 +22,11 @@ export default function HomePage() {
               <p style={{ color: "rgba(255,255,255,0.7)", fontSize: "1.1rem", lineHeight: 1.7, marginBottom: "36px", maxWidth: "520px" }}>
                 Professional plumbing, bathroom installations and tiling across Staffordshire. Emergency call-outs, honest pricing, and work you can be proud of.
               </p>
-              <div className="flex flex-wrap gap-4">
-                <Link href="/quote" className="font-semibold text-white px-8 py-4 rounded-md transition-colors text-base" style={{ background: "#1E63D6" }}>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link href="/quote" className="font-semibold text-white px-8 py-4 rounded-md transition-colors text-base text-center" style={{ background: "#1E63D6" }}>
                   Get a Free Quote
                 </Link>
-                <a href="tel:+447306800847" className="font-semibold px-8 py-4 rounded-md border-2 transition-colors text-base" style={{ color: "#fff", borderColor: "rgba(255,255,255,0.3)", background: "rgba(255,255,255,0.05)" }}>
+                <a href="tel:+447306800847" className="font-semibold px-8 py-4 rounded-md border-2 transition-colors text-base text-center" style={{ color: "#fff", borderColor: "rgba(255,255,255,0.3)", background: "rgba(255,255,255,0.05)" }}>
                   Call 07306 800847
                 </a>
               </div>
@@ -125,7 +125,12 @@ export default function HomePage() {
                 className="group block"
                 style={{ background: "#F2F4F7", border: "1px solid #D1D9E6", borderRadius: "12px", padding: "28px", textDecoration: "none", transition: "box-shadow 0.2s, border-color 0.2s" }}
               >
-                <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: "14px" }}>
+                <div style={{ width: "44px", height: "44px", background: "#EBF1FC", borderRadius: "10px", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "16px" }}>
+                  <svg width="22" height="22" fill="none" stroke="#1E63D6" strokeWidth={1.6} strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+                    <path d={service.icon} />
+                  </svg>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: "10px" }}>
                   <span style={{ background: "#EBF1FC", color: "#1E63D6", fontSize: "0.72rem", fontWeight: 600, padding: "4px 10px", borderRadius: "50px", letterSpacing: "0.12em", textTransform: "uppercase" }}>
                     {service.category}
                   </span>
@@ -299,9 +304,9 @@ export default function HomePage() {
                 Check availability
               </a>
             </div>
-            <div className="lg:col-span-2 flex flex-wrap gap-3">
+            <div className="lg:col-span-2 grid grid-cols-2 sm:grid-cols-3 gap-2">
               {AREAS.map((area) => (
-                <span key={area} style={{ background: "#F2F4F7", border: "1px solid #D1D9E6", borderRadius: "50px", padding: "8px 18px", fontSize: "0.88rem", fontWeight: 500, color: "#0A1A2F" }}>
+                <span key={area} style={{ background: "#F2F4F7", border: "1px solid #D1D9E6", borderRadius: "8px", padding: "10px 14px", fontSize: "0.85rem", fontWeight: 500, color: "#0A1A2F", textAlign: "center", display: "block" }}>
                   {area}
                 </span>
               ))}
@@ -319,11 +324,11 @@ export default function HomePage() {
           <p style={{ color: "rgba(255,255,255,0.75)", fontSize: "1.05rem", marginBottom: "36px" }}>
             Get a free, no-obligation quote. Henry will get back to you the same day.
           </p>
-          <div className="flex flex-wrap gap-4 justify-center">
-            <Link href="/quote" style={{ background: "#FFFFFF", color: "#0A1A2F", padding: "14px 32px", borderRadius: "8px", fontWeight: 700, textDecoration: "none", fontSize: "1rem" }}>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/quote" className="text-center" style={{ background: "#FFFFFF", color: "#0A1A2F", padding: "14px 32px", borderRadius: "8px", fontWeight: 700, textDecoration: "none", fontSize: "1rem" }}>
               Request a Quote
             </Link>
-            <a href="tel:+447306800847" style={{ border: "2px solid rgba(255,255,255,0.4)", color: "#fff", padding: "14px 32px", borderRadius: "8px", fontWeight: 700, textDecoration: "none", fontSize: "1rem", background: "rgba(255,255,255,0.08)" }}>
+            <a href="tel:+447306800847" className="text-center" style={{ border: "2px solid rgba(255,255,255,0.4)", color: "#fff", padding: "14px 32px", borderRadius: "8px", fontWeight: 700, textDecoration: "none", fontSize: "1rem", background: "rgba(255,255,255,0.08)" }}>
               Call 07306 800847
             </a>
           </div>
