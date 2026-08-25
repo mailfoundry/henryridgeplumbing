@@ -14,9 +14,9 @@ export default function Footer() {
               <Image
                 src="/henry-ridge-plumbing-primary-stacked.svg"
                 alt="Henry Ridge Plumbing"
-                width={160}
-                height={80}
-                className="h-16 w-auto"
+                width={220}
+                height={110}
+                className="h-24 w-auto"
               />
             </Link>
             <p className="text-sm leading-relaxed mb-2" style={{ color: "rgba(255,255,255,0.5)" }}>

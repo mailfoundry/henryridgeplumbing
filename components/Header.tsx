@@ -57,9 +57,9 @@ export default function Header() {
           <Image
             src="/henry-ridge-plumbing-horizontal.svg"
             alt="Henry Ridge Plumbing"
-            width={200}
-            height={52}
-            className="h-12 w-auto"
+            width={260}
+            height={68}
+            className="h-16 w-auto"
             priority
           />
         </Link>

@@ -9,13 +9,13 @@ export default function HomePage() {
   return (
     <>
       {/* ── Logo reveal ──────────────────────────────────────────────── */}
-      <section style={{ background: "#FFFFFF", padding: "56px 16px 48px", textAlign: "center", borderBottom: "1px solid #D1D9E6" }}>
+      <section style={{ background: "#FFFFFF", padding: "18px 16px", textAlign: "center", borderBottom: "1px solid #D1D9E6" }}>
         <Image
           src="/henry-ridge-plumbing-primary-stacked-4k.png"
           alt="Henry Ridge Plumbing"
-          width={500}
-          height={250}
-          className="h-56 w-auto mx-auto"
+          width={300}
+          height={150}
+          className="h-20 w-auto mx-auto"
           priority
         />
       </section>
@@ -30,7 +30,7 @@ export default function HomePage() {
                 Reliable · Professional · Local
               </p>
               <h1 style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 800, fontSize: "clamp(2.6rem, 6vw, 4rem)", color: "#FFFFFF", lineHeight: 1.05, marginBottom: "20px", letterSpacing: "-0.01em" }}>
-                Staffordshire&rsquo;s Trusted Plumber, Bathroom Fitter &amp; Tiler
+                Staffordshire Plumber, Bathroom Fitter &amp; Tiler
               </h1>
               <p style={{ color: "rgba(255,255,255,0.7)", fontSize: "1.1rem", lineHeight: 1.7, marginBottom: "36px", maxWidth: "520px" }}>
                 Professional plumbing, bathroom installations and tiling across Staffordshire. Emergency call-outs, honest pricing, and work you can be proud of.
