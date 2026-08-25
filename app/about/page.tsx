@@ -24,12 +24,10 @@ export default function AboutPage() {
 
       <section style={{ padding: "70px 16px", background: "#FFFFFF" }}>
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-14 items-start">
-          {/* Photo placeholder */}
-          <div style={{ background: "#F2F4F7", border: "1px solid #D1D9E6", borderRadius: "16px", minHeight: "420px", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column", gap: "14px", color: "#4A5A72" }}>
-            <svg width="64" height="64" fill="none" stroke="currentColor" strokeWidth={1.2} viewBox="0 0 24 24" style={{ opacity: 0.35 }}>
-              <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/>
-            </svg>
-            <span style={{ fontSize: "0.85rem", opacity: 0.55 }}>Photo of Henry — coming soon</span>
+          {/* Photo of Henry */}
+          <div style={{ borderRadius: "16px", overflow: "hidden", border: "1px solid #D1D9E6" }}>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/gallery/10.jpg" alt="Henry Ridge — plumber, bathroom fitter and tiler based in Staffordshire" style={{ width: "100%", display: "block", objectFit: "cover" }} />
           </div>
 
           {/* Bio */}
