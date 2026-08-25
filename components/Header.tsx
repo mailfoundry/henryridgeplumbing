@@ -7,7 +7,7 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-white border-b" style={{ borderColor: "#D1D9E6" }}>
+    <header className="sticky top-0 z-50" style={{ background: "#0A1A2F" }}>
       {/* Top bar with ticker */}
       <style>{`
         @keyframes ticker {
@@ -66,19 +66,19 @@ export default function Header() {
           <Image
             src="/hr-logo.png"
             alt="Henry Ridge Plumbing"
-            width={64}
-            height={64}
-            className="h-14 w-14"
+            width={80}
+            height={80}
+            className="h-16 w-16"
             priority
           />
         </Link>
 
         {/* Desktop nav */}
-        <nav className="hidden md:flex items-center gap-7 text-sm font-medium" style={{ color: "#0A1A2F" }}>
-          <Link href="/services" className="hover:text-hrp-blue transition-colors" style={{ color: "#0A1A2F" }}>Services</Link>
-          <Link href="/about" className="hover:text-hrp-blue transition-colors" style={{ color: "#0A1A2F" }}>About</Link>
-          <Link href="/gallery" className="hover:text-hrp-blue transition-colors" style={{ color: "#0A1A2F" }}>Gallery</Link>
-          <Link href="/contact" className="hover:text-hrp-blue transition-colors" style={{ color: "#0A1A2F" }}>Contact</Link>
+        <nav className="hidden md:flex items-center gap-7 text-sm font-medium">
+          <Link href="/services" className="transition-colors" style={{ color: "rgba(255,255,255,0.8)" }}>Services</Link>
+          <Link href="/about" className="transition-colors" style={{ color: "rgba(255,255,255,0.8)" }}>About</Link>
+          <Link href="/gallery" className="transition-colors" style={{ color: "rgba(255,255,255,0.8)" }}>Gallery</Link>
+          <Link href="/contact" className="transition-colors" style={{ color: "rgba(255,255,255,0.8)" }}>Contact</Link>
         </nav>
 
         {/* CTA */}
@@ -86,7 +86,7 @@ export default function Header() {
           <a
             href="tel:+447306800847"
             className="text-sm font-semibold transition-colors"
-            style={{ color: "#1E63D6" }}
+            style={{ color: "rgba(255,255,255,0.9)" }}
           >
             07306 800847
           </a>
@@ -104,7 +104,7 @@ export default function Header() {
         {/* Mobile toggle */}
         <button
           className="md:hidden p-1"
-          style={{ color: "#0A1A2F" }}
+          style={{ color: "#FFFFFF" }}
           onClick={() => setOpen(!open)}
           aria-label="Toggle menu"
         >
