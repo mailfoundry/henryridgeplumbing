@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { services, AREAS } from "@/lib/services";
 
 export default function HomePage() {
@@ -13,6 +14,14 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left — copy */}
             <div>
+              <Image
+                src="/henry-ridge-plumbing-primary-stacked-4k.png"
+                alt="Henry Ridge Plumbing"
+                width={320}
+                height={160}
+                className="w-56 h-auto mb-8"
+                priority
+              />
               <p className="text-xs font-semibold uppercase mb-5" style={{ color: "#1E63D6", letterSpacing: "0.25em" }}>
                 Reliable · Professional · Local
               </p>
