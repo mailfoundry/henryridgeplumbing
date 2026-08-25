@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* ── Henry Ridge Plumbing brand palette ── */
+  --color-hrp-navy:      #0A1A2F;   /* deep navy — primary dark */
+  --color-hrp-navy-mid:  #152640;   /* slightly lighter navy */
+  --color-hrp-blue:      #1E63D6;   /* brand blue — main accent */
+  --color-hrp-blue-dk:   #1550B8;   /* hover state */
+  --color-hrp-blue-lt:   #EBF1FC;   /* very light blue tint */
+  --color-hrp-silver:    #C0C5CC;   /* silver from logo drop */
+  --color-hrp-silver-lt: #E8EAED;   /* light silver */
+  --color-hrp-light:     #F2F4F7;   /* page section backgrounds */
+  --color-hrp-white:     #FFFFFF;
+  --color-hrp-slate:     #4A5A72;   /* body text secondary */
+  --color-hrp-border:    #D1D9E6;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: #FFFFFF;
+  color: #0A1A2F;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Barlow Condensed', 'Inter', system-ui, sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.1;
+}
