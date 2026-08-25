@@ -8,21 +8,24 @@ export default function HomePage() {
 
   return (
     <>
+      {/* ── Logo reveal ──────────────────────────────────────────────── */}
+      <section style={{ background: "#FFFFFF", padding: "48px 16px 40px", textAlign: "center", borderBottom: "1px solid #D1D9E6" }}>
+        <Image
+          src="/henry-ridge-plumbing-primary-stacked-4k.png"
+          alt="Henry Ridge Plumbing"
+          width={400}
+          height={200}
+          className="h-36 w-auto mx-auto"
+          priority
+        />
+      </section>
+
       {/* ── Hero ─────────────────────────────────────────────────────── */}
       <section style={{ background: "linear-gradient(135deg, #0A1A2F 0%, #152640 60%, #1B3060 100%)", padding: "90px 16px" }}>
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left — copy */}
             <div>
-              <Image
-                src="/henry-ridge-plumbing-primary-stacked-4k.png"
-                alt="Henry Ridge Plumbing"
-                width={320}
-                height={160}
-                className="w-64 h-auto mb-8"
-                style={{ filter: "brightness(0) invert(1)" }}
-                priority
-              />
               <p className="text-xs font-semibold uppercase mb-5" style={{ color: "#1E63D6", letterSpacing: "0.25em" }}>
                 Reliable · Professional · Local
               </p>
