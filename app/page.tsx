@@ -169,15 +169,15 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* Photo grid */}
+          {/* Photo grid — highest numbered photos = finished result */}
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3 mb-10">
             {[
-              { src: "/gallery/after-2109.jpg", tall: true },
-              { src: "/gallery/after-2112.jpg", tall: false },
-              { src: "/gallery/after-2107.jpg", tall: false },
-              { src: "/gallery/after-2104.jpg", tall: false },
-              { src: "/gallery/after-2115.jpg", tall: false },
-              { src: "/gallery/after-2057.jpg", tall: false },
+              { src: "/gallery/35.jpg" },
+              { src: "/gallery/34.jpg" },
+              { src: "/gallery/33.jpg" },
+              { src: "/gallery/32.jpg" },
+              { src: "/gallery/31.jpg" },
+              { src: "/gallery/30.jpg" },
             ].map(({ src }, i) => (
               <div
                 key={i}
