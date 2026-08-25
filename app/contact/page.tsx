@@ -16,7 +16,7 @@ export default function ContactPage() {
             Contact
           </h1>
           <p style={{ color: "rgba(255,255,255,0.6)", fontSize: "1.05rem", maxWidth: "520px", lineHeight: 1.7 }}>
-            Call Henry directly or fill in the quote form — he&apos;ll get back to you the same day.
+            Call me directly or fill in the quote form — I&apos;ll get back to you the same day.
           </p>
         </div>
       </section>
@@ -31,7 +31,7 @@ export default function ContactPage() {
               07306 800847
             </a>
             <p style={{ color: "rgba(255,255,255,0.5)", fontSize: "0.9rem", lineHeight: 1.65 }}>
-              Call Henry directly — no call centres, no waiting. For emergencies, always call rather than emailing.
+              Call me directly — no call centres, no waiting. For emergencies, always call rather than emailing.
             </p>
           </div>
 
@@ -42,7 +42,7 @@ export default function ContactPage() {
               info@henryridgeplumbing.co.uk
             </a>
             <p style={{ color: "#4A5A72", fontSize: "0.9rem", lineHeight: 1.65 }}>
-              For non-urgent enquiries. Henry aims to respond the same day.
+              For non-urgent enquiries. I aim to respond the same day.
             </p>
           </div>
 
@@ -53,7 +53,7 @@ export default function ContactPage() {
                 Want a free quote?
               </h2>
               <p style={{ color: "#4A5A72", fontSize: "0.95rem" }}>
-                Fill in the online form and Henry will get back to you with a price — no obligation.
+                Fill in the online form and I&apos;ll get back to you with a price — no obligation.
               </p>
             </div>
             <Link href="/quote" style={{ background: "#1E63D6", color: "#fff", padding: "14px 32px", borderRadius: "8px", fontWeight: 700, textDecoration: "none", fontSize: "1rem", flexShrink: 0 }}>

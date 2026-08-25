@@ -21,7 +21,7 @@ export default function ServicesPage() {
             Services
           </h1>
           <p style={{ color: "rgba(255,255,255,0.6)", maxWidth: "560px", fontSize: "1.05rem", lineHeight: 1.7 }}>
-            Professional plumbing, bathroom fitting and tiling — carried out to a high standard with no subcontractors and no nonsense.
+            I offer professional plumbing, bathroom fitting and tiling — to a high standard, no subcontractors, no nonsense.
           </p>
         </div>
       </section>
@@ -92,7 +92,7 @@ export default function ServicesPage() {
               Not sure which service you need?
             </h2>
             <p style={{ color: "#4A5A72", marginBottom: "24px", fontSize: "0.95rem" }}>
-              Describe your problem and Henry will get back to you with the best approach.
+              Describe your problem and I&apos;ll get back to you with the best approach.
             </p>
             <Link href="/quote" style={{ display: "inline-block", background: "#1E63D6", color: "#fff", padding: "14px 32px", borderRadius: "8px", fontWeight: 700, textDecoration: "none", fontSize: "1rem" }}>
               Get a Free Quote

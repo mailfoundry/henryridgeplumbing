@@ -61,7 +61,7 @@ export default function GalleryPage() {
             Want a bathroom like this?
           </h2>
           <p style={{ color: "rgba(255,255,255,0.75)", marginBottom: "28px" }}>
-            Get a free, no-obligation quote — Henry will get back to you the same day.
+            Get a free, no-obligation quote — I&apos;ll get back to you the same day.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/quote" className="text-center" style={{ background: "#FFFFFF", color: "#0A1A2F", padding: "14px 30px", borderRadius: "8px", fontWeight: 700, textDecoration: "none" }}>

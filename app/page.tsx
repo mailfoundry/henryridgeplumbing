@@ -55,7 +55,7 @@ export default function HomePage() {
                 07306 800847
               </a>
               <p style={{ color: "rgba(255,255,255,0.5)", fontSize: "0.88rem", marginBottom: "28px" }}>
-                Call Henry directly — no call centres, no waiting
+                Call me directly — no call centres, no waiting
               </p>
 
               <div style={{ display: "flex", flexDirection: "column", gap: "14px", marginBottom: "32px" }}>
@@ -169,7 +169,7 @@ export default function HomePage() {
             </div>
             <div>
               <p style={{ color: "rgba(255,255,255,0.6)", fontSize: "1rem", lineHeight: 1.75 }}>
-                When you book Henry for a bathroom, you get Henry — from the strip-out to the final fixture. No subcontractors on your doorstep. No corners cut. Just a properly fitted bathroom done right.
+                When you book me for a bathroom, you get me — from the strip-out to the final fixture. No subcontractors on your doorstep. No corners cut. Just a properly fitted bathroom, done right.
               </p>
             </div>
           </div>
@@ -244,7 +244,7 @@ export default function HomePage() {
                 A plumber who actually turns up
               </h2>
               <p style={{ color: "#4A5A72", fontSize: "1.05rem", lineHeight: 1.75, marginBottom: "32px" }}>
-                Henry Ridge Plumbing is a one-man operation — which means when you call, you speak to Henry. When he arrives, it&apos;s Henry. No subcontractors, no surprises.
+                I&apos;m a one-man operation — which means when you call, you speak to me. When I arrive, it&apos;s me doing the work. No subcontractors, no surprises.
               </p>
               <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
                 {[
@@ -278,10 +278,10 @@ export default function HomePage() {
               <h3 style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 800, fontSize: "1.5rem", color: "#0A1A2F", marginBottom: "6px" }}>Henry Ridge</h3>
               <p style={{ color: "#1E63D6", fontSize: "0.88rem", fontWeight: 600, marginBottom: "14px" }}>Plumber · Bathroom Fitter · Tiler</p>
               <p style={{ color: "#4A5A72", fontSize: "0.9rem", lineHeight: 1.7 }}>
-                Based in Staffordshire, Henry takes pride in doing a proper job — no shortcuts, no mess left behind, and no inflated quotes.
+                Based in Staffordshire, I take pride in doing a proper job — no shortcuts, no mess left behind, and no inflated quotes.
               </p>
               <Link href="/about" style={{ display: "inline-block", marginTop: "20px", color: "#1E63D6", fontWeight: 600, fontSize: "0.9rem", textDecoration: "none" }}>
-                Read more about Henry →
+                Read more about me →
               </Link>
             </div>
           </div>
@@ -322,7 +322,7 @@ export default function HomePage() {
             Need a plumber in Staffordshire?
           </h2>
           <p style={{ color: "rgba(255,255,255,0.75)", fontSize: "1.05rem", marginBottom: "36px" }}>
-            Get a free, no-obligation quote. Henry will get back to you the same day.
+            Get a free, no-obligation quote. I&apos;ll get back to you the same day.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/quote" className="text-center" style={{ background: "#FFFFFF", color: "#0A1A2F", padding: "14px 32px", borderRadius: "8px", fontWeight: 700, textDecoration: "none", fontSize: "1rem" }}>

@@ -90,7 +90,7 @@ export default async function ServicePage({ params }: Props) {
               <div style={{ background: "#FFF8F0", border: "1px solid #F0D9B5", borderRadius: "10px", padding: "24px", marginBottom: "32px" }}>
                 <p style={{ fontWeight: 700, color: "#0A1A2F", marginBottom: "6px" }}>Emergency call-outs available</p>
                 <p style={{ color: "#4A5A72", fontSize: "0.9rem" }}>
-                  For urgent situations, call Henry directly on <a href="tel:+447306800847" style={{ color: "#1E63D6", fontWeight: 600 }}>07306 800847</a>. He&apos;ll aim to be with you as soon as possible.
+                  For urgent situations, call me directly on <a href="tel:+447306800847" style={{ color: "#1E63D6", fontWeight: 600 }}>07306 800847</a>. I&apos;ll be with you as soon as possible.
                 </p>
               </div>
             )}
@@ -103,7 +103,7 @@ export default async function ServicePage({ params }: Props) {
                 Get a free quote
               </h3>
               <p style={{ color: "rgba(255,255,255,0.55)", fontSize: "0.88rem", marginBottom: "20px", lineHeight: 1.6 }}>
-                Describe your job and Henry will get back to you the same day.
+                Describe your job and I&apos;ll get back to you the same day.
               </p>
               <Link href="/quote" style={{ display: "block", background: "#1E63D6", color: "#fff", padding: "13px 20px", borderRadius: "8px", fontWeight: 700, textDecoration: "none", textAlign: "center", marginBottom: "14px" }}>
                 Request a Quote

@@ -17,7 +17,7 @@ export default function AboutPage() {
             A plumber you can actually rely on
           </h1>
           <p style={{ color: "rgba(255,255,255,0.6)", fontSize: "1.05rem", maxWidth: "560px", lineHeight: 1.7 }}>
-            Based in Staffordshire, Henry works to a standard he&apos;d be happy with in his own home — every time, no exceptions.
+            Based in Staffordshire, I work to a standard I&apos;d be happy with in my own home — every time, no exceptions.
           </p>
         </div>
       </section>
@@ -38,20 +38,20 @@ export default function AboutPage() {
             <p style={{ color: "#1E63D6", fontWeight: 600, fontSize: "0.95rem", marginBottom: "24px" }}>Plumber · Bathroom Fitter · Tiler</p>
 
             <p style={{ color: "#4A5A72", fontSize: "1rem", lineHeight: 1.8, marginBottom: "18px" }}>
-              Henry is a fully qualified plumber based in Staffordshire. Specialising in plumbing, bathroom installations and tiling, he brings a straightforward, no-nonsense approach to every job — from replacing a leaking tap to fitting a complete bathroom from scratch.
+              I&apos;m a fully qualified plumber based in Staffordshire. I specialise in plumbing, bathroom installations and tiling, and bring a straightforward, no-nonsense approach to every job — from replacing a leaking tap to fitting a complete bathroom from scratch.
             </p>
             <p style={{ color: "#4A5A72", fontSize: "1rem", lineHeight: 1.8, marginBottom: "18px" }}>
-              When you book with Henry, you get Henry. There are no subcontractors, no third parties showing up on your doorstep. He takes the time to understand what you need, give you an honest quote, and deliver work that lasts.
+              When you book with me, you get me. No subcontractors, no third parties on your doorstep. I take the time to understand what you need, give you an honest quote, and deliver work that lasts.
             </p>
             <p style={{ color: "#4A5A72", fontSize: "1rem", lineHeight: 1.8, marginBottom: "32px" }}>
-              He covers Staffordshire and the surrounding area, offering emergency call-outs for burst pipes and major leaks as well as planned work for bathroom transformations and general plumbing repairs.
+              I cover Staffordshire and the surrounding area, offering emergency call-outs for burst pipes and major leaks as well as planned work for bathroom transformations and general plumbing repairs.
             </p>
 
             {/* Values */}
             <div style={{ display: "flex", flexDirection: "column", gap: "14px" }}>
               {[
                 ["Honest pricing", "You&apos;ll get a clear quote upfront — no surprise additions once work is underway."],
-                ["Tidy working", "Henry leaves your home as he finds it — mess cleared, tools packed away."],
+                ["Tidy working", "I leave your home as I find it — mess cleared, tools packed away."],
                 ["Local knowledge", "Covering Staffordshire means quick response times and no inflated travel charges."],
                 ["Fully insured", "Public liability insurance in place for your complete peace of mind."],
               ].map(([title, body]) => (
@@ -75,7 +75,7 @@ export default function AboutPage() {
             Areas covered
           </h2>
           <p style={{ color: "#4A5A72", marginBottom: "28px", fontSize: "0.95rem" }}>
-            Covering Stoke-on-Trent and the surrounding area. Not sure if Henry covers you? Just call.
+            Covering Stoke-on-Trent and the surrounding area. Not sure if I cover you? Just call.
           </p>
           <div className="flex flex-wrap gap-3">
             {AREAS.map((area) => (
@@ -94,7 +94,7 @@ export default function AboutPage() {
             Ready to get started?
           </h2>
           <p style={{ color: "rgba(255,255,255,0.75)", marginBottom: "28px" }}>
-            Get a free, no-obligation quote — Henry will get back to you the same day.
+            Get a free, no-obligation quote — I&apos;ll get back to you the same day.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Link href="/quote" style={{ background: "#FFFFFF", color: "#0A1A2F", padding: "14px 30px", borderRadius: "8px", fontWeight: 700, textDecoration: "none" }}>
