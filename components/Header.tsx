@@ -7,7 +7,7 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50" style={{ background: "#0A1A2F" }}>
+    <header className="sticky top-0 z-50" style={{ background: "#0A1A2F", borderBottom: "1px solid rgba(255,255,255,0.12)" }}>
       {/* Top bar with ticker */}
       <style>{`
         @keyframes ticker {
@@ -66,9 +66,9 @@ export default function Header() {
           <Image
             src="/hr-logo.png"
             alt="Henry Ridge Plumbing"
-            width={80}
-            height={80}
-            className="h-16 w-16"
+            width={100}
+            height={100}
+            className="h-20 w-20"
             priority
           />
         </Link>
