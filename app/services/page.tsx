@@ -86,8 +86,29 @@ export default function ServicesPage() {
             ))}
           </div>
 
+          {/* Gas & boiler referral */}
+          <div style={{ marginTop: "40px", background: "#F2F4F7", border: "1px solid #D1D9E6", borderRadius: "12px", padding: "32px", display: "flex", flexWrap: "wrap", alignItems: "center", justifyContent: "space-between", gap: "20px" }}>
+            <div>
+              <p className="text-xs font-semibold uppercase mb-2" style={{ color: "#1E63D6", letterSpacing: "0.2em" }}>Need gas or boiler work?</p>
+              <h3 style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 700, fontSize: "1.4rem", color: "#0A1A2F", marginBottom: "6px" }}>
+                Phil Rose Plumbing &amp; Heating
+              </h3>
+              <p style={{ color: "#4A5A72", fontSize: "0.9rem", lineHeight: 1.65, maxWidth: "480px" }}>
+                Gas Safe registered engineer based in Leek, Staffordshire — boiler installations, servicing, and heating systems. Phil is the engineer who trained me, and I have no hesitation recommending him.
+              </p>
+            </div>
+            <a
+              href="https://philroseplumbing.co.uk"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ background: "#0A1A2F", color: "#fff", padding: "13px 26px", borderRadius: "8px", fontWeight: 700, textDecoration: "none", fontSize: "0.95rem", flexShrink: 0 }}
+            >
+              Visit Phil Rose Plumbing →
+            </a>
+          </div>
+
           {/* Quote CTA */}
-          <div style={{ marginTop: "60px", background: "#F2F4F7", border: "1px solid #D1D9E6", borderRadius: "12px", padding: "40px", textAlign: "center" }}>
+          <div style={{ marginTop: "28px", background: "#F2F4F7", border: "1px solid #D1D9E6", borderRadius: "12px", padding: "40px", textAlign: "center" }}>
             <h2 style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 800, fontSize: "2rem", color: "#0A1A2F", marginBottom: "10px" }}>
               Not sure which service you need?
             </h2>
