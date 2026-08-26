@@ -20,7 +20,7 @@ export default function HomePage() {
                 Staffordshire Plumber, Bathroom Fitter &amp; Tiler
               </h1>
               <p style={{ color: "rgba(255,255,255,0.7)", fontSize: "1.1rem", lineHeight: 1.7, marginBottom: "36px", maxWidth: "520px" }}>
-                Professional plumbing, bathroom installations and tiling across Staffordshire. Emergency call-outs, honest pricing, and work you can be proud of.
+                Professional plumbing, bathroom installations and tiling across Staffordshire. Evenings and weekends, honest pricing, and work you can be proud of.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/quote" className="font-semibold text-white px-8 py-4 rounded-md transition-colors text-base text-center" style={{ background: "#1E63D6" }}>
@@ -34,7 +34,7 @@ export default function HomePage() {
               {/* Trust badges */}
               <div className="flex flex-wrap gap-6 mt-10 pt-10" style={{ borderTop: "1px solid rgba(255,255,255,0.1)" }}>
                 {[
-                  { label: "Fast Response", sub: "Emergency call-outs" },
+                  { label: "Evenings & Weekends", sub: "Available after hours" },
                   { label: "Fair Pricing", sub: "No hidden costs" },
                   { label: "Local", sub: "Staffordshire based" },
                 ].map(({ label, sub }) => (
@@ -49,7 +49,7 @@ export default function HomePage() {
             {/* Right — emergency card */}
             <div style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.12)", borderRadius: "16px", padding: "36px" }}>
               <p className="text-xs font-semibold uppercase mb-3" style={{ color: "rgba(255,255,255,0.4)", letterSpacing: "0.2em" }}>
-                Emergency Call-Out
+                Direct Line
               </p>
               <a href="tel:+447306800847" style={{ display: "block", fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 800, fontSize: "2.4rem", color: "#1E63D6", textDecoration: "none", letterSpacing: "-0.01em", marginBottom: "4px" }}>
                 07306 800847
@@ -60,9 +60,9 @@ export default function HomePage() {
 
               <div style={{ display: "flex", flexDirection: "column", gap: "14px", marginBottom: "32px" }}>
                 {[
-                  { dot: "#4ADE80", text: "Emergency response available" },
-                  { dot: "#1E63D6", text: "Burst pipes &amp; major leaks prioritised" },
-                  { dot: "#1E63D6", text: "Staffordshire &amp; surrounding areas covered" },
+                  { dot: "#4ADE80", text: "Available evenings &amp; weekends" },
+                  { dot: "#1E63D6", text: "Burst pipes &amp; urgent repairs covered" },
+                  { dot: "#1E63D6", text: "Staffordshire &amp; surrounding areas" },
                 ].map(({ dot, text }) => (
                   <div key={text} style={{ display: "flex", alignItems: "center", gap: "10px" }}>
                     <div style={{ width: "8px", height: "8px", borderRadius: "50%", background: dot, flexShrink: 0 }} />
