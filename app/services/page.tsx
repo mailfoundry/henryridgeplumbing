@@ -103,7 +103,7 @@ export default function ServicesPage() {
               rel="noopener noreferrer"
               style={{ background: "#0A1A2F", color: "#fff", padding: "13px 26px", borderRadius: "8px", fontWeight: 700, textDecoration: "none", fontSize: "0.95rem", flexShrink: 0 }}
             >
-              Visit Phil Rose Plumbing →
+              Phil Rose — Gas &amp; Oil Heating →
             </a>
           </div>
 
