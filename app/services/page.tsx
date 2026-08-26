@@ -94,7 +94,7 @@ export default function ServicesPage() {
                 Phil Rose Plumbing &amp; Heating
               </h3>
               <p style={{ color: "#4A5A72", fontSize: "0.9rem", lineHeight: 1.65, maxWidth: "480px" }}>
-                Gas Safe registered engineer based in Leek, Staffordshire — boiler installations, servicing, and heating systems. Phil is the engineer who trained me, and I have no hesitation recommending him.
+                Gas Safe and OFTEC registered engineer based in Leek, Staffordshire — covering gas boilers, oil boilers, and full heating systems. Phil is the engineer who trained me, and I have no hesitation recommending him.
               </p>
             </div>
             <a
