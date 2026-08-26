@@ -32,7 +32,7 @@ export default function ServicesPage() {
           {/* Emergency — full width highlight */}
           <div style={{ background: "linear-gradient(135deg, #0A1A2F 0%, #152640 100%)", borderRadius: "14px", padding: "40px", marginBottom: "28px", display: "flex", flexWrap: "wrap", alignItems: "center", justifyContent: "space-between", gap: "24px" }}>
             <div>
-              <p className="text-xs font-semibold uppercase mb-2" style={{ color: "#1E63D6", letterSpacing: "0.2em" }}>Emergency</p>
+              <p className="text-xs font-semibold uppercase mb-2" style={{ color: "#1E63D6", letterSpacing: "0.2em" }}>Urgent Call-Outs</p>
               <h2 style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 800, fontSize: "2rem", color: "#FFFFFF", marginBottom: "10px" }}>
                 {emergency.title}
               </h2>

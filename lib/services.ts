@@ -25,7 +25,7 @@ export const services: Service[] = [
     title: "Emergency Leak & Pipe Repair",
     shortTitle: "Emergency Repairs",
     category: "Plumbing",
-    tagline: "Fast response across Staffordshire — burst pipes, major leaks, and urgent fixes.",
+    tagline: "Available evenings & weekends across Staffordshire — burst pipes, major leaks, and urgent fixes.",
     description:
       "A burst pipe or sudden leak can cause serious damage fast. I respond quickly to emergency call-outs across Staffordshire — isolating the problem, stopping the damage, and getting everything sorted with minimum disruption to your home.",
     features: [
