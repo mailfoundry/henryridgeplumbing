@@ -433,9 +433,10 @@ export default function AdminPage() {
             {showForm && (
               <div style={{ background: "#FFFFFF", border: "1px solid #D1D9E6", borderRadius: "12px", padding: "28px", marginBottom: "28px" }}>
                 <h3 style={{ margin: "0 0 20px", fontWeight: 700, fontSize: "1rem", color: "#0A1A2F" }}>Create Invoice</h3>
+                <style>{mobileStyles}</style>
                 <form onSubmit={submitInvoice} style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
                   {/* Customer details */}
-                  <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "12px" }}>
+                  <div className="inv-customer-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "12px" }}>
                     <div>
                       <label style={labelStyle}>Customer Name</label>
                       <input
@@ -462,41 +463,46 @@ export default function AdminPage() {
                     <label style={labelStyle}>Line Items</label>
                     <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
                       {lineItems.map((item, i) => (
-                        <div key={i} style={{ display: "grid", gridTemplateColumns: "1fr 80px 110px 36px", gap: "8px", alignItems: "center" }}>
+                        <div key={i} className="inv-line-grid" style={{ display: "grid", gridTemplateColumns: "1fr 80px 110px 36px", gap: "8px", alignItems: "center" }}>
                           <input
                             value={item.description}
                             onChange={(e) => updateLine(i, "description", e.target.value)}
                             placeholder="Description of work"
                             style={inputStyle}
                           />
-                          <input
-                            type="number"
-                            min={1}
-                            value={item.quantity}
-                            onChange={(e) => updateLine(i, "quantity", e.target.value)}
-                            placeholder="Qty"
-                            style={{ ...inputStyle, textAlign: "center" }}
-                          />
-                          <div style={{ position: "relative" }}>
-                            <span style={{ position: "absolute", left: "12px", top: "50%", transform: "translateY(-50%)", color: "#4A5A72", fontSize: "0.9rem", pointerEvents: "none" }}>£</span>
+                          <div className="inv-line-right" style={{ display: "contents" }}>
                             <input
+                              className="inv-line-qty"
                               type="number"
-                              min={0}
-                              step="0.01"
-                              value={item.unitAmount}
-                              onChange={(e) => updateLine(i, "unitAmount", e.target.value)}
-                              placeholder="0.00"
-                              style={{ ...inputStyle, paddingLeft: "28px" }}
+                              min={1}
+                              value={item.quantity}
+                              onChange={(e) => updateLine(i, "quantity", e.target.value)}
+                              placeholder="Qty"
+                              style={{ ...inputStyle, textAlign: "center" }}
                             />
+                            <div style={{ position: "relative" }}>
+                              <span style={{ position: "absolute", left: "12px", top: "50%", transform: "translateY(-50%)", color: "#4A5A72", fontSize: "0.9rem", pointerEvents: "none" }}>£</span>
+                              <input
+                                className="inv-line-amount"
+                                type="number"
+                                min={0}
+                                step="0.01"
+                                value={item.unitAmount}
+                                onChange={(e) => updateLine(i, "unitAmount", e.target.value)}
+                                placeholder="0.00"
+                                style={{ ...inputStyle, paddingLeft: "28px" }}
+                              />
+                            </div>
+                            <button
+                              className="inv-line-remove"
+                              type="button"
+                              onClick={() => removeLine(i)}
+                              disabled={lineItems.length === 1}
+                              style={{ background: "none", border: "1px solid #D1D9E6", borderRadius: "6px", color: "#C53030", cursor: lineItems.length === 1 ? "default" : "pointer", fontSize: "1rem", width: "36px", height: "36px", opacity: lineItems.length === 1 ? 0.3 : 1 }}
+                            >
+                              ×
+                            </button>
                           </div>
-                          <button
-                            type="button"
-                            onClick={() => removeLine(i)}
-                            disabled={lineItems.length === 1}
-                            style={{ background: "none", border: "1px solid #D1D9E6", borderRadius: "6px", color: "#C53030", cursor: lineItems.length === 1 ? "default" : "pointer", fontSize: "1rem", width: "36px", height: "36px", opacity: lineItems.length === 1 ? 0.3 : 1 }}
-                          >
-                            ×
-                          </button>
                         </div>
                       ))}
                     </div>
@@ -517,7 +523,7 @@ export default function AdminPage() {
                   </div>
 
                   {/* Due days + Notes */}
-                  <div style={{ display: "grid", gridTemplateColumns: "160px 1fr", gap: "12px" }}>
+                  <div className="inv-meta-grid" style={{ display: "grid", gridTemplateColumns: "160px 1fr", gap: "12px" }}>
                     <div>
                       <label style={labelStyle}>Payment due (days)</label>
                       <input
@@ -665,6 +671,20 @@ export default function AdminPage() {
     </div>
   );
 }
+
+// ─── Mobile styles (injected once) ───────────────────────────────────────────
+
+const mobileStyles = `
+  @media (max-width: 600px) {
+    .inv-customer-grid { grid-template-columns: 1fr !important; }
+    .inv-meta-grid     { grid-template-columns: 1fr !important; }
+    .inv-line-grid     { grid-template-columns: 1fr !important; gap: 6px !important; }
+    .inv-line-grid .inv-line-right { display: grid; grid-template-columns: 1fr 80px 36px; gap: 6px; }
+    .inv-line-qty,
+    .inv-line-amount   { display: block; }
+    .inv-line-remove   { align-self: center; }
+  }
+`;
 
 // ─── Style helpers ────────────────────────────────────────────────────────────
 

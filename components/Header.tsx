@@ -132,6 +132,11 @@ export default function Header() {
           <a href="tel:+447306800847" className="text-center font-semibold py-3 rounded-md border" style={{ color: "#1E63D6", borderColor: "#1E63D6" }}>
             Call 07306 800847
           </a>
+          <div style={{ borderTop: "1px solid #F2F4F7", paddingTop: "12px" }}>
+            <Link href="/admin" style={{ color: "#4A5A72", fontSize: "0.82rem" }} onClick={() => setOpen(false)}>
+              Admin
+            </Link>
+          </div>
         </div>
       )}
     </header>
