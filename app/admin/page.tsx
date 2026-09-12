@@ -85,7 +85,7 @@ export default function AdminPage() {
   const [showForm, setShowForm] = useState(false);
   const [formName, setFormName] = useState("");
   const [formEmail, setFormEmail] = useState("");
-  const [formDays, setFormDays] = useState("14");
+  const [formDays, setFormDays] = useState("0");
   const [formNotes, setFormNotes] = useState("");
   const [lineItems, setLineItems] = useState<LineItem[]>([emptyLine()]);
   const [submitting, setSubmitting] = useState(false);
@@ -525,10 +525,10 @@ export default function AdminPage() {
                   {/* Due days + Notes */}
                   <div className="inv-meta-grid" style={{ display: "grid", gridTemplateColumns: "160px 1fr", gap: "12px" }}>
                     <div>
-                      <label style={labelStyle}>Payment due (days)</label>
+                      <label style={labelStyle}>Payment due (days — 0 = now)</label>
                       <input
                         type="number"
-                        min={1}
+                        min={0}
                         max={90}
                         value={formDays}
                         onChange={(e) => setFormDays(e.target.value)}

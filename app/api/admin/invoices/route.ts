@@ -57,7 +57,7 @@ export async function POST(request: NextRequest) {
       customerName: string;
       customerEmail: string;
       lineItems: LineItem[];
-      dueInDays?: number;
+      dueInDays?: number; // 0 = due immediately
       notes?: string;
     };
 
