@@ -1,6 +1,8 @@
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+function getResend() {
+  return new Resend(process.env.RESEND_API_KEY);
+}
 
 const HENRY_EMAIL = "info@henryridgeplumbing.co.uk";
 const FROM = "Henry Ridge Plumbing <noreply@henryridgeplumbing.co.uk>";
@@ -14,7 +16,7 @@ export async function sendQuoteNotificationToHenry(data: {
   message: string;
   id: string;
 }) {
-  await resend.emails.send({
+  await getResend().emails.send({
     from: FROM,
     to: HENRY_EMAIL,
     subject: `New quote request — ${data.service} — ${data.name}`,
@@ -48,7 +50,7 @@ export async function sendQuoteConfirmationToCustomer(data: {
   email: string;
   service: string;
 }) {
-  await resend.emails.send({
+  await getResend().emails.send({
     from: FROM,
     to: data.email,
     subject: `Quote request received — Henry Ridge Plumbing`,
