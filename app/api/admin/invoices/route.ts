@@ -81,15 +81,11 @@ export async function POST(request: NextRequest) {
       customer = await stripe.customers.update(customer.id, { name: customerName });
     }
 
-    // Calculate due date
-    const dueDate = Math.floor(Date.now() / 1000) + dueInDays * 86400;
-
     // Create the invoice
     const invoice = await stripe.invoices.create({
       customer: customer.id,
       collection_method: "send_invoice",
-      days_until_due: dueInDays,
-      due_date: dueDate,
+      days_until_due: dueInDays, // 0 = due immediately; Stripe accepts this
       footer: notes ?? "Henry Ridge Plumbing — Staffordshire · info@henryridgeplumbing.co.uk · 07306 800847",
       auto_advance: false, // we'll finalize manually
     });
